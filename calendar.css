@@ -1,0 +1,112 @@
+.calendar {
+    width: 40%;
+    padding: 20px 20px ;
+    border-radius: 10px;
+    background-color: #fff;
+    backdrop-filter: blur(45px);
+    border: 10px solid rgba(255, 255, 255, .2);
+    margin: 0px auto;
+}
+
+.calendar .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:0px;
+  padding-bottom: 20px;
+  position: relative;
+  font-family: "Inter", sans-serif !important;
+}
+.calendar .header .month {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+  font-family: "Inter", sans-serif !important;
+}
+
+.calendar .header .btns {
+  display: flex;
+  gap: 10px;
+  flex-direction: row !important;
+  bottom: 20px !important;
+}
+.calendar .header .btns .btn {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #000000;
+  background-color: var(--primary-color);
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.calendar .header .btns .btn:hover {
+  background-color: rgba(255, 255, 255, .2);
+  transform: scale(1.1);
+}
+.weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.weekdays .day {
+  width: calc(100% / 7);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif !important;
+}
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+}
+.days .day {
+  width: calc(100% / 7);
+  padding: 7px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 5px; */
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: all 0.3s;
+  border: 1px solid #D5D4DF !important;
+}
+.days .day:not(.next):not(.prev):hover {
+  color: #D5D4DF;
+  background-color:#45539D;
+  cursor: pointer;
+}
+.days .day.today {
+  background-color: var(--primary-color);
+}
+.days .day.next,
+.days .day.prev {
+  color: #ccc;
+}
+.inner-hero{
+  padding-top: 1rem;
+}
+.inner-hero > h2{
+  color: #fff; 
+  margin-left: 2rem;
+}
+.inner-hero > p{
+  color: #fff; 
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 19px;
+}
+.hero{
+  min-height: 100vh;
+}
